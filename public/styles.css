@@ -12,11 +12,16 @@ body {
   background-image: url("background.jpg");
   background-size: cover;
 }
+.heading
+{
+  margin:170px auto 50px;
+}
 .feed
 {
   text-align: center;
   align-items: center;
   margin: auto;
+  color: #f98404;
 }
 .failure{
   margin: 10px 0 20px;

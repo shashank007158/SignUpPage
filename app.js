@@ -11,9 +11,12 @@ app.use(express.static("public"));
 
 app.get("/",function(req,res)
 {
-  res.sendFile(__dirname +"/signup.html");
+  res.sendFile(__dirname +"/home.html");
 });
-app.post("/",function(req,res)
+app.post("/",function(req,res){
+  res.sendFile(__dirname+"/signup.html");
+});
+app.post("/signup",function(req,res)
 {
   const f_name=req.body.firstname;
   const l_name=req.body.lastname;
